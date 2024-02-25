@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature photography</title>
+
+  <!-- Importing Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom CSS for addtional styling -->
+
+  <style >
+    .card-container{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+    }
+    .card{
+      padding: 10px;
+      margin: 20px;
+      justify-content: space-between;
+      width: 370px;
+      height: 470px;
+    }
+    .details{
+      padding: 30px;
+      margin: 20px;
+    }
+  </style>
+   
+</head>
+<body>
+  <div class="container">
+
+     <!-- Navbar containing navs, dropdown, Links, Popover, tooltips and badges -->
+
+
+     <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+      <div class="container-fluid" >
+        <a class="navbar-brand" >Travel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Options
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary position-relative">
+                Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  4
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </li>
+            <li class="nav-item" style="padding-left: 20px;">
+              <button type="button" class="btn btn-secondary" data-toggle="popover" title="This website contains information about the Arctic tourist destinations" data-content="And here's some amazing content. It's very engaging. Right?">
+                Popover
+              </button>
+            </li>
+            <li class="nav-item" style="padding-left: 20px;">
+              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="This is a static website">
+                Tooltip
+              </button>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <h3 class="mt-5"></h3>
+
+
+        <!-- Toast for website loaded sucessfully automatically disappear in 3 sec-->
+
+
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="margin-bottom: 20px;">
+          <div class="toast-header">
+            <strong class="me-auto">Bootstrap</strong>
+            <small class="text-body-secondary">5 Sec ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Website loaded sucessfully.
+          </div>
+        </div>
+
+    <!-- Grid System containing containers, images and typography-->
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Nature photography</h2>
+        <p>
+          Nature photography captures the breathtaking beauty of the natural world, from expansive landscapes to intricate details. It's an art form that inspires awe and appreciation, highlighting the delicate balance of ecosystems and the need for conservation. Advancements in technology enable photographers to capture stunning images with precision and clarity, while drones offer unique perspectives. Nature photographers serve as advocates for the environment, raising awareness about conservation issues through their work. They document the ever-changing landscape, preserving moments for future generations to cherish and protect, fostering a deeper connection between humanity and the natural world.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://c02.purpledshub.com/uploads/sites/62/2022/03/MelissaGrooFlorida_cmyk-55fdc66.jpg?w=1175&webp=1" class="img-fluid" alt="Placeholder Image">
+      </div>
+    </div>
+
+        <!-- Loading Alerts -->
+        <div class="mt-5">
+          <div class="alert alert-success" role="alert">
+            success webpage load alert!
+          </div>
+        </div>
+    
+
+        <!-- Carousel containg images of various posts and places -->
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/Luxury-arctic-boat-cruises-boatingmain.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/Antarctica-penguins.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/Luxury-arctic-boat-cruises-boatingmain.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item active">
+      <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/Icelandic-views-Deplar-Farm-luxury-pools-and-views.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item active">
+      <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/Arctic-Snow-Hotel-Fi-Auroramain.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="details">
+  <p>Here at The Luxury Arctic Travel Company we take your trip seriously – we want to ensure you get off the tourist trail and that you have access to the world’s top Arctic guides and experts, as well as locations which are exclusive and wild. We love planning bespoke trips throughout the Arctic, Antarctica and Scandinavia and are famous for our seamless itineraries. You won’t have to think about anything apart from enjoying yourselves.</p>
+</div>
+
+    
+    <!-- Progress Bars containg progress of current website-->
+
+    <div class="mt-5">
+      <h2>Progress of Webpage</h2>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+
+
+  <!-- Cards containing various places to visit linked with the actual website-->
+
+
+    <div class="mt-5">
+      <h2>Cards</h2>
+      <div class="card-container">
+      <div class="card">
+        <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/z-Finland-muotka-norhtern-lights.jpg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title">Finland</h5>
+          <p class="card-text">Luxary Finland Escapes.</p>
+          <a href="https://www.theluxuryarctictravelcompany.com/destinations/finland-holidays/" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/z-Sweden-Tree-Hotel-Holidays.jpg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title">Sweden</h5>
+          <p class="card-text">Swedish Holidays.</p>
+          <a href="https://www.theluxuryarctictravelcompany.com/destinations/sweden-holidays/" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/z-Norway-Kirkenes-Snow-Hotel.jpg-skidoo.jpg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title">Norway</h5>
+          <p class="card-text">Norway Holidays</p>
+          <a href="https://www.theluxuryarctictravelcompany.com/destinations/norway-holidays/" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/z-Iceland-and-Northern-Lights.jpg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title">Iceland</h5>
+          <p class="card-text">Destination Island.</p>
+          <a href="https://www.theluxuryarctictravelcompany.com/destinations/iceland-holidays/" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/z-Alaska-2.jpg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title">Alaska</h5>
+          <p class="card-text">Destination Alaska.</p>
+          <a href="https://www.theluxuryarctictravelcompany.com/destinations/alaska-and-greenland-holidays/" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://www.theluxuryarctictravelcompany.com/app/uploads/2019/08/Winterlake-Lodge-Alaska-huskies-350x300.jpg" class="card-img-top" alt="Placeholder Image">
+        <div class="card-body">
+          <h5 class="card-title">Greenland</h5>
+          <p class="card-text">Greenland Adventure.</p>
+          <a href="https://www.theluxuryarctictravelcompany.com/destinations/alaska-and-greenland-holidays/" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<!-- List Groups containing the information about those places-->
+
+
+<div class="mt-5">
+  <h2>Details of places</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Finland, land of pristine lakes, captivating forests, and vibrant cities like Helsinki. Renowned for its sauna culture, education system, and breathtaking Northern Lights displays.</li>
+    <li class="list-group-item">
+      Sweden, a Scandinavian gem, boasts stunning landscapes, innovative design, egalitarian values, and a rich cultural heritage. It's known for ABBA, Volvo, and the Nobel Prize.</li>
+    <li class="list-group-item">Norway, land of fjords and Northern Lights, boasts stunning natural beauty, rich Viking history, welfare state model, and Nobel Peace Prize tradition. Iconic Scandinavian gem.</li>
+    <li class="list-group-item">Iceland, known for its stunning landscapes: glaciers, geysers, waterfalls, and volcanic activity. Rich in Viking history, culture, and folklore. Reykjavik, the charming capital.</li>
+    <li class="list-group-item">Alaska, America's largest state, boasts breathtaking landscapes, including glaciers, mountains, and wildlife. Its remote beauty captivates with rugged wilderness and unique culture.</li>
+    <li class="list-group-item">
+      Greenland, an autonomous territory within the Kingdom of Denmark, boasts stunning icy landscapes, vast glaciers, fjords, and a unique Inuit culture.</li>
+  </ul>
+</div>
+   
+
+  <!-- Tables containing pricing and duration of the full pacakage-->
+
+  <table class="table table-hover " style="margin: 40px;">
+    <thead>
+      <tr>
+        <th scope="col">Trip</th>
+        <th scope="col">Destination</th>
+        <th scope="col">Package</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Finland</td>
+        <td>6 Days 5 Nights</td>
+        <td>Rs. 1,25,699</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Sweden</td>
+        <td>7 Days 6 Nights</td>
+        <td>Rs. 1,75,899</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Norway</td>
+        <td>5 Days 4 Nights</td>
+        <td>Rs. 2,55,299</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Iceland</td>
+        <td>7 Days 6 Nights</td>
+        <td>Rs. 2,65,899</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Alaska</td>
+        <td>6 Days 5 Nights</td>
+        <td>Rs. 1,75,699</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Greenland</td>
+        <td>8 Days 7 Nights</td>
+        <td>Rs. 3,25,699</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!--Feedback forms for the people for suggesting anything about webpage-->
+
+
+      <div class="mt-5">
+        <h2>Feedback Form</h2>
+        <form>
+          <div class="mb-3">
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1"  class="form-label">Name</label>
+              <input type="text" placeholder="Enter your name" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" placeholder="Enter your email address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1"  class="form-label"></label>
+              <textarea class="form-control" name="subject" placeholder="Write something.." style="height: 200px;"></textarea>
+            </div>
+
+          </div>
+         
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+      <!-- Pagination for different pages in the webpage -->
+
+
+      <nav aria-label="Page navigation example" style="overflow: hidden;">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+  <!-- Bootstrap JS, jQuery and Popper.js -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Initialize tooltips and popovers -->
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+      $('.toast').toast('show');
+    });
+  </script>
+</body>
+</html>
